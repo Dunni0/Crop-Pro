@@ -6,8 +6,7 @@ input{
     border-radius: 19px;
     outline: none;
 
-    background: linear-gradient(0deg, #efeaea, #efebeb),
-    linear-gradient(0deg, #EFEFEF, #EFEFEF);
+    background: rgba(239, 239, 239, 1);
 
 }
 
