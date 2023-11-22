@@ -5,8 +5,12 @@ input{
     padding: 1rem 1rem 1rem;
     border-radius: 19px;
     outline: none;
-    background: linear-gradient(0deg, #ecdede, #e7e2e2),
-    linear-gradient(0deg, #EFEFEF, #EFEFEF);
+    /* background: linear-gradient(0deg, #ecdede, #e7e2e2),
+    linear-gradient(0deg, #EFEFEF, #EFEFEF); */
+
+    background: linear-gradient(0deg, #f0eeee, #f6f2f2),
+linear-gradient(0deg, #EFEFEF, #EFEFEF);
+
 }
 
 .crops_list{
