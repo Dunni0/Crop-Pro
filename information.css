@@ -1,0 +1,8 @@
+.empty_div{
+    max-width: 343px;
+    height: 281px;
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}

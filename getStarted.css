@@ -1,0 +1,186 @@
+@import url(clash-display.css);
+  
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column ;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.image_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini_wrapper{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini_wrapper > img{
+    width: 49%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.info_wrapper{
+    margin-top: 2rem;
+}
+
+h2, .logo > span, h3{
+   font-family: 'ClashDisplay-Variable';
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    text-transform: capitalize;
+}
+
+h2, 
+p{
+    padding-bottom: 1rem;
+}
+
+.info_wrapper > .info > button{
+    border: 0;
+    padding: 1rem 3rem 1rem;
+    background: rgba(34, 96, 0, 1);
+    color: #fff;
+    border-radius: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+
+}
+
+.logo > span{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 29.41px;
+    color: rgba(34, 96, 0, 1);
+}
+
+#logo{
+    display: none;
+}
+
+#hide{
+    display: none;
+}
+
+@media (min-width: 1000PX) {
+    body{
+        overflow: hidden;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .wrapper{
+        margin: 1rem auto;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .mini_wrapper > img{
+        width: 50%;
+    }    
+
+    #logo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo{
+        display: block;
+    }
+
+    #logo{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        justify-content: flex-start;
+        
+    }
+
+    .logo > span{
+        font-size: 2rem;
+    }
+    
+    #hide{
+        display: block;
+    }
+
+    #hide > img{
+        width: 1.8rem;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .info_wrapper{
+        margin-top: 0;
+    }
+
+    .info_wrapper > .info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15rem;
+    }
+
+    .info_wrapper > .info > button{
+        width: 200px;
+    }
+
+    .info_wrapper > .info > button{
+        margin-top: 2rem;
+        border: 0;
+        padding: 1rem 3rem 1rem;
+        background: rgba(34, 96, 0, 1);
+        color: #fff;
+        border-radius: 30px;
+    }
+    
+}
