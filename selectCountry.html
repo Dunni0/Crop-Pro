@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="getStarted.css" rel="stylesheet" />
-    <link href="selectCountry.css" rel="stylesheet" />
+    <link href="./styles/getStarted.css" rel="stylesheet" />
+    <link href="./styles/selectCountry.css" rel="stylesheet" />
+    <link href="./styles/selectCrop.css" rel="stylesheet" />
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +19,8 @@
     <div class="container">
       <div class="wrapper">
         <div class="logo">
-         <img src="./images/mingcute_leaf-2-fill.png" alt="leaf"/>
-         <span> Crop Pro</span>
+         <img  src="./images/mingcute_leaf-2-fill.png" alt="leaf"/>
+         <a href="index.html"> <span>  Crop Pro  </span> </a>
         </div>
         <a class="hide" href="selectCrop.html"> <img src="images/ic_sharp-arrow-back-ios.jpg" alt="arrow-back-ios"/> </a>
         <div class="image_wrapper">
@@ -32,7 +34,7 @@
         <div class="info_wrapper">
           <div class="logo" id="logo">
           <img src="./images/mingcute_leaf-2-fill.png" alt="leaf"/>
-          <span> Crop Pro</span>
+          <a href="index.html"> <span>  Crop Pro  </span> </a>
          </div>
         <a id="hide" href="selectCrop.html"> <img src="images/ic_sharp-arrow-back-ios.jpg" alt="arrow-back-ios"/> </a>
           <div class="info"> 
@@ -46,25 +48,14 @@
           <h3> 
             What country are you in ?
           </h3>
-          <div class="country_wrapper">
-            <div class="country_list">
-                <div class="country_list_mini">
-                <p>
-                    Nigeria
-                </p>
-                <p>
-                    Kenya
-                </p>
-                <p>
-                    South Africa
-                </p>
-                </div>
-          </div>
-        </div>
-        <button> <a href="information.html"> Proceed </a> </button>
+          <input class="search" type="text" placeholder="Search by city name..." spellcheck="false" required/>
+           
+        <button id="selectCountry_next"> Proceed </button>
       </div>
       </div>
     </div>
   </body>
-  <script src="getStarted.js"></script>
+  <!-- <script src="scripts/getStarted.js"></script> -->
+  <script src="scripts/selectCountry.js"></script>
+
 </html>

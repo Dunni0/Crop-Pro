@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="getStarted.css" rel="stylesheet" />
-    <link href="selectCrop.css" rel="stylesheet" />
+    <link href="./styles/getStarted.css" rel="stylesheet" />
+    <link href="./styles/selectCrop.css" rel="stylesheet" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
       <div class="wrapper">
         <div class="logo">
          <img src="./images/mingcute_leaf-2-fill.png" alt="leaf"/>
-         <span> Crop Pro</span>
+         <a href="index.html"> <span>  Crop Pro  </span> </a>
         </div>
         <a class="hide" href="index.html"> <img src="images/ic_sharp-arrow-back-ios.jpg" alt="arrow-back-ios"/> </a>
         <div class="image_wrapper">
@@ -33,7 +33,7 @@
         <div class="info_wrapper">
           <div id="logo" class="logo" >
             <img src="./images/mingcute_leaf-2-fill.png" alt="leaf"/>
-            <span> Crop Pro</span>
+            <a href="index.html"> <span>  Crop Pro  </span> </a>
           </div>
           <a id="hide" href="hello.html"> <img src="images/ic_sharp-arrow-back-ios.jpg" alt="arrow-back-ios"/> </a>
 
@@ -47,44 +47,45 @@
           <h3> 
             What crop are you growing?
           </h3>
-          <input type="text" placeholder="Search here..."/>
+          <input id="input" type="text" placeholder="Search here..." required/>
           <div class="crops_wrapper">
             <div class="crops_list">
                 <div>
-                <p>
+                <p class = "crop"> 
                     Rice
                 </p>
-                <p>
+                <p class = "crop">
                     Chickpea
                 </p>
-                <p>
+                <p class = "crop">
                     Pigeon Pea
                 </p>
-                <p>
+                <p class = "crop">
                     Watermelon
                 </p>
                 </div>
+
                 <div> 
-                <p>
+                <p class = "crop">
                     Maize
                 </p>
-                <p>
+                <p class = "crop">
                     Kidney Beans
                 </p>
-                
-                <p>
+                <p class = "crop">
                     Moth Beans
                 </p>
-                <p>
+                <p class = "crop">
                     cotton
                 </p>
                 </div>
           </div>
         </div>
-        <button> <a href="selectCountry.html"> Proceed </a> </button>
+        <button id="selectCrop_next"> Proceed  </button>
       </div>
       </div>
     </div>
   </body>
-  <script src="getStarted.js"></script>
+  <!-- <script src="./scripts/getStarted.js"></script> -->
+  <script src="./scripts/selectCrop.js"></script>
 </html>
