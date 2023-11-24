@@ -13,19 +13,16 @@ function click(){
 
    function getInput(event){
        event.preventDefault();
-       if(event.type == "click"){
-         getData(search.value);
-         window.location.href = "information.html"
-       }
-   }
 
-   document.addEventListener("keypress",function(){
-      if(event.charCode==13|| event.which==13){
-         event.preventDefault();
+       if(search.value === ""){
+         return
+       }
+
+       else if(event.type == "click"){
          getData(search.value);
          window.location.href = "information.html"
        }
-   })
+      }
 
    
 } click();
@@ -58,14 +55,16 @@ function displayData(response){
 
    console.log(dataObj)
 
-   // fetch("/data", {
-   //    method: "POST",
-   //    headers: {
-   //       "Content-type": "application/json"
-   //    },
-   //    body: JSON.stringify(dataObj)
-   // })
- 
+   fetch("https://crop-pro-api.cyclic.app/predict", {
+      method: "POST",
+      headers: {
+         "Content-type": "application/json"
+      },
+      body: JSON.stringify(dataObj)
+   })
+   .then((res) => res.json())
+   .then(json => console.log(json))
+   .catch(err => console.log("err " + err))
 }
 
 

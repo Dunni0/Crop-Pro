@@ -58,6 +58,7 @@ h3{
 
 p{
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
 h2{
@@ -75,10 +76,18 @@ p{
     background: rgba(34, 96, 0, 1);
     color: #fff;
     border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 300ms ease-out;
+}
+
+.info_wrapper > .info > button:hover{
+    cursor: pointer;
+    box-shadow:3px 3px  #E67E03;
 }
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 .logo{
@@ -173,12 +182,13 @@ a{
         margin-top: 13rem;
     }
 
+
     .info_wrapper > .info > button{
         width: 200px;
     }
 
     .info_wrapper > .info > button{
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         border: 0;
         padding: 1rem 3rem 1rem;
         background: rgba(34, 96, 0, 1);
@@ -190,7 +200,7 @@ a{
        max-width: 60%;
       }
      */
-      img{
+    img{
         max-width: 90%;
     }
 

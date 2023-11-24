@@ -11,8 +11,14 @@ input{
 
 }
 
-.crops_list{
-    display: flex;
+input:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.crops_list > div { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
@@ -28,13 +34,19 @@ input{
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(47, 47, 47, 1);
+    transition: all 300ms ease-out;
 }
 
 .crops_list > div > p:hover{
     cursor: pointer;
-    border: 1px solid rgba(34, 96, 0, 1);
+    border: 2px solid rgba(34, 96, 0, 1);
     color: rgba(34, 96, 0, 1);
 }
+
+.toggle{
+    transform: scale(0.9);
+}
+
 
 
 @media (min-width: 1000PX) {
