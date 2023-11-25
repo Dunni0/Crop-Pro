@@ -13,10 +13,12 @@ function click() {
     event.preventDefault();
 
     if (search.value === "") {
+  const errorMsg = document.getElementById("errMsg")
+
+      errorMsg.style.display = "block"
       return;
     } else if (event.type == "click") {
       await getData(search.value);
-      window.location.href = "information.html"
     }
   }
 }
@@ -39,7 +41,11 @@ async function displayData(response) {
     console.log("enter valid city");
     errorMsg.style.display = "block"
     search.value = "";
-  } else {
+    // console.log("errors")
+    return
+  } 
+
+  else {
     const cropInput = window.localStorage.getItem("myObj");
     const location = response.name;
     const country = response.sys.country;
@@ -79,6 +85,10 @@ async function displayData(response) {
 
         localStorage.setItem("data", dataSerialized)
         console.log(dataSerialized)
+        })
+        .then(() =>{
+      window.location.href = "information.html"
+
         })
         .catch((err) => console.log("err " + err));
     } else {
