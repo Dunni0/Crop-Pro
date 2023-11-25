@@ -7,27 +7,35 @@ const cropsArray = Array.from(crops);
 
 const input = document.querySelector("#input");
 
-Object.defineProperty(String.prototype, 'capitalize', {
+Object.defineProperty(String.prototype, 'lowercase', {
   value: function() {
-    return this.charAt(0).toLowerCase() + this.slice(1).replace(/\s/g, '');
+    return this.toLowerCase().replace(/\s/g, '');
   },
   enumerable: false
 });
 
 function btn() {
+
+  const crops = ["rice", "chickpeas", "pigeonpeas", "watermelon", 
+  "maize", "kidneybeans", "mothbeans", "cotton", "lentil",
+  "blackgram", "jute", "mungbean", "muskmelon"]
+
   selectCrop_next.addEventListener("click", (e) => {
     e.preventDefault();
-   
-    if(input.value === ""){
-      return
-    }
 
-    else if (input.value){    
-    let value = input.value.capitalize()
+    if (input.value){    
+    let value = input.value.lowercase()
+
+    if(crops.indexOf(value) < 0){
+        const errorMsg = document.getElementById("errMsg")
+        errorMsg.style.display = "block"
+        return;
+    }
     localStorage.setItem("myObj", value)
     console.log(localStorage)
 
     window.location.href = "selectCountry.html";
+
     }
 
   });

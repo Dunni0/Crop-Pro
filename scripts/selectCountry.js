@@ -4,6 +4,10 @@ const api = {
 };
 
 const search = document.querySelector(".search");
+const soilPh = document.querySelector(".soilPh")
+const waterAvail = document.querySelector(".waterAvail")
+
+
 const selectCountry_next = document.querySelector("#selectCountry_next");
 
 function click() {
@@ -12,7 +16,7 @@ function click() {
   async function getInput(event) {
     event.preventDefault();
 
-    if (search.value === "") {
+    if (search.value === "" || soilPh.value === "" || waterAvail.value === "") {
   const errorMsg = document.getElementById("errMsg")
 
       errorMsg.style.display = "block"
@@ -53,6 +57,10 @@ async function displayData(response) {
     const humidity = response.main.humidity;
     const weather = response.weather[0].description;
 
+    const toNumSoilPh = Number(soilPh.value)
+    const toNumWaterAvail = Number(waterAvail.value)
+
+
     if (
       country == "NG" ||
       country == "ZA" ||
@@ -66,6 +74,8 @@ async function displayData(response) {
         temperature: temp,
         humidity: humidity,
         weather: weather,
+        soilPh: toNumSoilPh,
+        waterAvail: toNumWaterAvail
       };
 
       console.log(dataObj);
