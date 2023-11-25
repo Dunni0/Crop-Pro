@@ -8,6 +8,8 @@ information_next.addEventListener('click',(e) =>{
 
 const message = document.getElementById("empty_div")
 const data = window.localStorage.getItem("data")
+console.log(data)
+
 const d = JSON.parse(data)
 console.log(d)
 

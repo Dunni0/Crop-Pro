@@ -9,31 +9,31 @@ const selectCountry_next = document.querySelector("#selectCountry_next");
 function click() {
   selectCountry_next.addEventListener("click", getInput);
 
-  function getInput(event) {
+  async function getInput(event) {
     event.preventDefault();
 
     if (search.value === "") {
       return;
     } else if (event.type == "click") {
-      getData(search.value);
-      // window.location.href = "information.html"
+      await getData(search.value);
+      window.location.href = "information.html"
     }
   }
 }
 click();
 
-function getData() {
-  fetch(`${api.base}weather?q=${search.value}&units=metric&appid=${api.key}`)
+async function getData() {
+  await fetch(`${api.base}weather?q=${search.value}&units=metric&appid=${api.key}`)
     .then((response) => {
       return response.json();
     })
-    .then(displayData)
+    .then((res) => displayData(res))
     .catch((err) => {
       console.log("error" + err);
     });
 }
 
-function displayData(response) {
+async function displayData(response) {
   const errorMsg = document.getElementById("errMsg")
   if (response.cod == "404") {
     console.log("enter valid city");
@@ -64,7 +64,7 @@ function displayData(response) {
 
       console.log(dataObj);
 
-      fetch("https://crop-pro-68730434122c.herokuapp.com/predict", {
+      await fetch("https://crop-pro-68730434122c.herokuapp.com/predict", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
