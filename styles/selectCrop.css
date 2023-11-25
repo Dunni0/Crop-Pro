@@ -1,7 +1,7 @@
 input{
     border: 1px solid rgba(106, 106, 106, 1);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
     width: 100%;
     padding: 1rem 1rem 1rem;
     border-radius: 19px;
@@ -20,7 +20,7 @@ input:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .crops_list > div > p {
