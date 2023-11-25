@@ -11,11 +11,9 @@ const data = window.localStorage.getItem("data")
 const d = JSON.parse(data)
 console.log(d)
 
-console.log(d.crop)
-
 message.innerHTML = `
 <p>
-For cultivating ${d.crop} in [location], the ideal planting season is [season], 
+For cultivating ${d.crop} in [location], the ideal planting season is ${d.season}, 
 with an anticipated harvest during [harvest season].
 
 Ensure the soil maintains a pH level of  for optimal growth.
