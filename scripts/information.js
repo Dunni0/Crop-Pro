@@ -18,7 +18,7 @@ with an anticipated harvest during [harvest season].
 
 Ensure the soil maintains a pH level of  for optimal growth.
 
-Considering [locationS]'s temperature range, ensure it stays at to support the  crop throughout its growth cycle.
+Considering ${d.ph} temperature range, ensure it stays at to support the  crop throughout its growth cycle.
 </p>
 `
 
