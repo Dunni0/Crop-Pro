@@ -16,7 +16,7 @@ function click() {
       return;
     } else if (event.type == "click") {
       getData(search.value);
-      // window.location.href = "information.html"
+      window.location.href = "information.html"
     }
   }
 }
