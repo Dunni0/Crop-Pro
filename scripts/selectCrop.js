@@ -9,7 +9,7 @@ const input = document.querySelector("#input");
 
 Object.defineProperty(String.prototype, 'capitalize', {
   value: function() {
-    return this.charAt(0).toLowerCase() + this.slice(1);
+    return this.charAt(0).toLowerCase() + this.slice(1).replace(/\s/g, '');
   },
   enumerable: false
 });

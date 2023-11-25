@@ -72,6 +72,7 @@ p{
 
 .info_wrapper > .info > button{
     border: 0;
+    margin-top: 0.8rem;
     padding: 1rem 3rem 1rem;
     background: rgba(34, 96, 0, 1);
     color: #fff;
@@ -196,10 +197,6 @@ a{
         border-radius: 30px;
     }
 
-    /* .image_wrapper{
-       max-width: 60%;
-      }
-     */
     img{
         max-width: 90%;
     }

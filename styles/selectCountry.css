@@ -23,6 +23,13 @@
     color: rgba(34, 96, 0, 1) ;
 }
 
+#errMsg{
+    display: none;
+    padding-left: 10px;
+    font-size: small;
+    font-weight: bold;
+}
+
 @media (min-width: 1000PX) {
 
     .wrapper{
