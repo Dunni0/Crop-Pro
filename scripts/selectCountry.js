@@ -92,7 +92,7 @@ async function displayData(response) {
       })
         .then((res) => res.json())
         .then((json) => {
-          console.log(json)  
+        console.log(json)  
         const data = json.data
         const dataSerialized = JSON.stringify(data)
 
