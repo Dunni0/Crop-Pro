@@ -19,7 +19,7 @@ function click() {
     const toNumSoilPh = Number(soilPh.value)
     const toNumWaterAvail = Number(waterAvail.value)
 
-    if (search.value === "" || soilPh.value === "" || waterAvail.value === "" || toNumSoilPh > 10 || toNumWaterAvail > 300) {
+    if (search.value === "" || soilPh.value === "" || waterAvail.value === "" || toNumSoilPh > 14 || toNumWaterAvail > 300) {
     const errorMsg = document.getElementById("errMsg")
 
       errorMsg.style.display = "block"
@@ -77,8 +77,8 @@ async function displayData(response) {
         temperature: temp,
         humidity: humidity,
         weather: weather,
-        soilPh: toNumSoilPh,
-        waterAvail: toNumWaterAvail
+        ph: toNumSoilPh,
+        waterAvailability: toNumWaterAvail
       };
 
       console.log(dataObj);
@@ -100,7 +100,7 @@ async function displayData(response) {
         console.log(dataSerialized)
         })
         .then(() =>{
-      window.location.href = "information.html"
+        window.location.href = "information.html"
 
         })
         .catch((err) => console.log("err " + err));

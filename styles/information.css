@@ -1,5 +1,5 @@
 .empty_div{
-    max-width: 343px;
+    max-width: 400px;
     color: rgba(0, 0, 0, 1);
     border: 1px solid rgba(0, 0, 0, 1);
     margin-top: 15px;
@@ -8,4 +8,6 @@
     padding: 0.5rem;
     font-size: 0.9rem;
     font-weight: bold;
+    word-spacing: 3px;
+    line-height: 1.8rem;
 }

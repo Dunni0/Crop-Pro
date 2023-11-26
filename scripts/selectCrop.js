@@ -16,7 +16,7 @@ Object.defineProperty(String.prototype, 'lowercase', {
 
 function btn() {
 
-  const crops = ["rice", "chickpeas", "pigeonpeas", "watermelon", 
+  const crops = ["rice", "chickpea", "pigeonpeas", "watermelon", 
   "maize", "kidneybeans", "mothbeans", "cotton", "lentil",
   "blackgram", "jute", "mungbean", "muskmelon"]
 

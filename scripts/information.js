@@ -15,15 +15,18 @@ console.log(d)
 
 message.innerHTML = `
 <p>
-For cultivating ${d.crop} in [location], the ideal planting season is ${d.season}, 
-with an anticipated harvest during [harvest season].
+In ${d.location}, ${d.country}, the ideal planting season for ${d.crop} is the ${d.plantingSeason} season, 
+with the crop growth duration being ${d.cropDuration} months.
 
-Ensure the soil maintains a pH level of  for optimal growth.
+Considering your location's temperature range of ${d.temperature}°C and pH level of ${d.ph} ensure the soil 
+maintains the pH level of 6.5 - 7 to support the crop throughout its growth cycle.
 
-Considering ${d.ph} temperature range, ensure it stays at to support the crop throughout its growth cycle.
+Additionally, the forecasted harvest season for this crop is expected to be 
+in the ${d.harvestSeason} season.
 </p>
 `
 
 
 
 
+ 

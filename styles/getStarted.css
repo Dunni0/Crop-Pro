@@ -55,17 +55,20 @@ h2, .logo > a > span, h3{
 h3{
   font-weight: 500;
   margin-top: 0.6rem;
-  font-size: medium;
+  font-size: 300;
+  word-spacing: 5px;
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
-    max-width: 340px;
+    max-width: 380px;
 }
 
 h2{
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    word-spacing: 5px;
+    /* max-width: 600px; */
 }
 
 h2, 
@@ -87,7 +90,7 @@ p{
 
 .info_wrapper > .info > button:hover{
     cursor: pointer;
-    box-shadow:3px 3px  #E67E03;
+    box-shadow:0 5px #E67E03;
 }
 
 a{
