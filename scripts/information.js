@@ -15,7 +15,7 @@ message.innerHTML = `
 <p>
 In ${d.location}, ${d.country}, the current temperature is ${d.temperature}°C and the
 ideal planting season for ${d.crop} is the ${d.plantingSeason} season, 
-with the crop growth duration being ${d.cropDuration} months.
+with the crop growth duration being about ${d.cropDuration} months.
 
 Considering your location's pH level of ${d.ph}, ensure the soil 
 maintains a pH level between 6.5 and 7 to support the crop throughout its growth cycle.
