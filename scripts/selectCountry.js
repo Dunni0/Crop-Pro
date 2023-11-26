@@ -16,8 +16,11 @@ function click() {
   async function getInput(event) {
     event.preventDefault();
 
-    if (search.value === "" || soilPh.value === "" || waterAvail.value === "") {
-  const errorMsg = document.getElementById("errMsg")
+    const toNumSoilPh = Number(soilPh.value)
+    const toNumWaterAvail = Number(waterAvail.value)
+
+    if (search.value === "" || soilPh.value === "" || waterAvail.value === "" || toNumSoilPh > 10 || toNumWaterAvail > 300) {
+    const errorMsg = document.getElementById("errMsg")
 
       errorMsg.style.display = "block"
       return;
@@ -101,8 +104,7 @@ async function displayData(response) {
 
         })
         .catch((err) => console.log("err " + err));
-    } else {
-      errorMsg.style.display = "block"
-    }
+    } 
+    
   }
 }
