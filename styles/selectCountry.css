@@ -1,13 +1,7 @@
-/* .country_list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
 #errMsg{
     display: none;
     padding-left: 10px;
-    font-size: large;
+    font-size: small;
     font-weight: bold;
     color: red;
 }

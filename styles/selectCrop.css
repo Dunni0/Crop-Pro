@@ -52,6 +52,7 @@ input:hover{
     padding-left: 10px;
     font-size: small;
     font-weight: bold;
+    color: red;
 }
 
 @media (min-width: 1000PX) {
