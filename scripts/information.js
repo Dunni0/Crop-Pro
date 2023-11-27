@@ -21,7 +21,7 @@ if (d.waterAvailOk) {
       ideal planting season for ${d.crop} is the ${d.plantingSeason} season, 
       with the crop growth duration being about ${d.cropDuration} months.
 
-      Considering your location's pH level of ${d.ph}, ensure the soil 
+      Considering your soil's pH level of ${d.ph}, ensure the soil 
       maintains a pH level between ${d.minPh} and ${d.maxPh} to support the crop throughout its growth cycle.
 
       Additionally, the forecasted harvest season for this crop is expected to be 
