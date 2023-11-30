@@ -119,10 +119,6 @@ a{
 }
 
 @media (min-width: 1000PX) {
-    body{
-        overflow: hidden;
-    }
-
     .logo{
         display: none;
     }
